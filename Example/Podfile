@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'AndVersion_Example' do
+  pod 'AndVersion', :path => '../'
+
+  target 'AndVersion_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
