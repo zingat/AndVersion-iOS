@@ -6,6 +6,7 @@ target 'AndVersion_Example' do
   target 'AndVersion_Tests' do
     inherit! :search_paths
 
+    pod 'AndVersion', :path => '../'
     
   end
 end

@@ -7,6 +7,7 @@
 //
 
 #import "zngViewController.h"
+#import "RemoteVersionInfo.h"
 
 @interface zngViewController ()
 

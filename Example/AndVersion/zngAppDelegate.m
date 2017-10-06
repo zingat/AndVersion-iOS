@@ -7,11 +7,22 @@
 //
 
 #import "zngAppDelegate.h"
+#import "AndVersion.h"
+
+@interface zngAppDelegate() <AndVersionDelegate>
+@end
 
 @implementation zngAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [AndVersion sharedAndVersion].delegate = self;
+    [AndVersion sharedAndVersion].showAlertForNewVersion = YES;
+    [AndVersion sharedAndVersion].showAlertForOptionalUpdate = YES;
+    [AndVersion sharedAndVersion].showAlertForMandatoryUpdate = YES;
+    [AndVersion sharedAndVersion].titleForNeedUpdate = @"Update your app for these awesome features";
+    [[AndVersion sharedAndVersion] checkVersionWithUrl:@"https://andversion.com/sample/demoIOS.json"];
+    
     // Override point for customization after application launch.
     return YES;
 }
@@ -41,6 +52,32 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+
+-(void) didAndVersionFindNoUpdate{
+    NSLog(@"No New Version");
+}
+
+-(void) didAndVersionFindOptionalUpdate:(NSArray <NSString *> *) whatsNew{
+    NSLog(@"Optional New Version");
+    for(NSString *wNew in whatsNew){
+        NSLog(@"%@", wNew);
+    }
+}
+
+-(void) didAndVersionFindMandatoryUpdate:(NSArray <NSString *> *) whatsNew{
+    NSLog(@"Mandatory New Version");
+    for(NSString *wNew in whatsNew){
+        NSLog(@"%@", wNew);
+    }
+}
+
+-(void) didAndVersionMeetNewVersion:(NSArray <NSString *> *) whatsNew{
+    NSLog(@"Meet New Version");
+    for(NSString *wNew in whatsNew){
+        NSLog(@"%@", wNew);
+    }
 }
 
 @end
