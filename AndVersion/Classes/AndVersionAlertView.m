@@ -41,7 +41,6 @@
     whatsNewList = whatsNew;
     
     UIView* superview = [UIApplication sharedApplication].keyWindow;
-    CGRect f = superview.bounds;
     self.frame = superview.bounds;
     self.backgroundColor = [UIColor clearColor];
     
@@ -111,10 +110,7 @@
 - (void) orientationChanged:(NSNotification *)note
 {
     UIView* superview = [UIApplication sharedApplication].keyWindow;
-    CGRect f = superview.bounds;
-    f = self.frame;
     self.frame = superview.bounds;
-    f = self.frame;
     _bgView.frame = self.bounds;
     _table.frame = [self createTableFrame];
     
