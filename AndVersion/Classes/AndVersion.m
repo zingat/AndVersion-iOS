@@ -112,13 +112,20 @@ static NSString *previousVersionPreferenceKey = @"com.andversion.previousversion
 -(void) checkVersionWithUrl:(NSString *) urlString{
     __weak typeof (self) weakSelf = self;
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
-        [weakSelf controlVersionJob: urlString];
+        [weakSelf getJsonParameters: urlString];
     });
 }
 
--(void) controlVersionJob:(NSString *) urlString{
-    RemoteVersionInfo *remoteVersionInf = [[RemoteVersionInfo alloc] initWithUrl:urlString];
+-(void) getJsonParameters:(NSString *) urlString{
+    RemoteVersionInfo *remoteVersionInf = [[RemoteVersionInfo alloc] init];
     
+    __weak typeof (self) weakSelf = self;
+    [remoteVersionInf getDataWithUrl:urlString success:^{
+        [weakSelf controlVersionJob: remoteVersionInf];
+    }];
+}
+
+-(void) controlVersionJob:(RemoteVersionInfo *)remoteVersionInf{
     NSDictionary *info = [[NSBundle mainBundle] infoDictionary];
     NSString *currentAppVersion = [info objectForKey:@"CFBundleShortVersionString"];
     
@@ -150,7 +157,7 @@ static NSString *previousVersionPreferenceKey = @"com.andversion.previousversion
     
     if(self.previousAppVersion == nil //the app is running first time, no need to show whats new
        || [currentAppVersion compareToVersion:remoteVersionInf.currentVersion] == NSOrderedAscending //device version is newer then json version
-       || [currentAppVersion compareToVersion:self.previousAppVersion] == NSOrderedSame //no update 
+       || [currentAppVersion compareToVersion:self.previousAppVersion] == NSOrderedSame //no update
        ){
         self.previousAppVersion = currentAppVersion;
         [self notifyDelegate:@selector(didAndVersionFindNoUpdate) withObject:nil];

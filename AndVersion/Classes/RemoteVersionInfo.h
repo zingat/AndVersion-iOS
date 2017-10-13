@@ -14,7 +14,7 @@
 @property (nonatomic) NSString* appStoreId;
 @property (nonatomic) NSDictionary* whatsNew;
 
--(instancetype) initWithUrl:(NSString *) urlString;
+-(void) getDataWithUrl:(NSString *)urlString success:(void(^)(void))callback;
 -(NSArray<NSString *>*) localWhatsNew;
 
 @end

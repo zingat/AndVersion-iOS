@@ -9,26 +9,26 @@
 
 @implementation RemoteVersionInfo
 
--(instancetype) initWithUrl:(NSString *) urlString{
-    self = [super init];
-    if(self){
-        [self readFromUrl:urlString];
-    }
-    return self;
-}
-
--(void) readFromUrl:(NSString *) urlString{
+-(void) getDataWithUrl:(NSString *)urlString success:(void(^)(void))callback{
     NSError *error;
     NSData *data = [NSData dataWithContentsOfURL: [NSURL URLWithString:urlString]];
-    NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
-
-    NSDictionary *andVersion = [json objectForKey:@"AndVersion"];
-    self.currentVersion = [andVersion objectForKey:@"CurrentVersion"];
-    self.minVersion = [andVersion objectForKey:@"MinVersion"];
-    self.whatsNew = [andVersion objectForKey:@"WhatsNew"];
-    self.appStoreId = [andVersion objectForKey:@"AppStoreId"];
-    
-    NSLog(@"json: %@", json);
+    if(data != nil){
+        NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
+        
+        if(error){
+            return;
+        }
+        
+        NSDictionary *andVersion = [json objectForKey:@"AndVersion"];
+        self.currentVersion = [andVersion objectForKey:@"CurrentVersion"];
+        self.minVersion = [andVersion objectForKey:@"MinVersion"];
+        self.whatsNew = [andVersion objectForKey:@"WhatsNew"];
+        self.appStoreId = [andVersion objectForKey:@"AppStoreId"];
+        
+        if(callback && self.currentVersion.length > 0 && self.minVersion.length > 0 && self.whatsNew.count > 0 && self.appStoreId.length > 0){
+            callback();
+        }
+    }
 }
 
 -(NSArray<NSString *>*) localWhatsNew{
