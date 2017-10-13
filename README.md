@@ -5,12 +5,17 @@
 [![License](https://img.shields.io/cocoapods/l/AndVersion.svg?style=flat)](http://cocoapods.org/pods/AndVersion)
 [![Platform](https://img.shields.io/cocoapods/p/AndVersion.svg?style=flat)](http://cocoapods.org/pods/AndVersion)
 
-This is the library that checks updates on Apple Store according to json file from the given url address. 
+This is the library that checks updates on Apple Store according to json file from the given url address.
 
-## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+## SCREENSHOT
+
+<img src="https://raw.githubusercontent.com/zingat/AndVersion-iOS/master/Example/images/must_update.png" width="100%">
+
+<img src="https://raw.githubusercontent.com/zingat/AndVersion-iOS/master/Example/images/need_to_update.png" width="100%">
+
+<img src="https://raw.githubusercontent.com/zingat/AndVersion-iOS/master/Example/images/new_version_is_running.png" width="100%">
 
 ### SAMPLE JSON FILE
 ```json

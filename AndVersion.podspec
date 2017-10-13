@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'AndVersion'
   s.version          = '1.0.0'
-  s.summary          = 'This is the library that checks updates on Apple Store according to json file from the given url address. '
+  s.summary          = 'This is the library that checks updates on Apple Store according to json file from the given url address.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,14 +18,14 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+This is the library that checks updates on Apple Store according to json file from the given url address. This library can work in three modes. Callback mode, autopilot mode and hybrid mode.
                        DESC
 
   s.homepage         = 'https://github.com/zingat/AndVersion-iOS'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.screenshots     = 'https://raw.githubusercontent.com/zingat/AndVersion-iOS/master/Example/images/must_update.png', 'https://raw.githubusercontent.com/zingat/AndVersion-iOS/master/Example/images/need_to_update.png', 'https://raw.githubusercontent.com/zingat/AndVersion-iOS/master/Example/images/new_version_is_running.png'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'kadirkemal' => 'kkdursun@yahoo.com' }
-  s.source           = { :git => 'https://github.com/kadirkemal/AndVersion.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/zingat/AndVersion-iOS.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
