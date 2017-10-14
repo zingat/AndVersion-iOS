@@ -149,19 +149,19 @@ You can use callback and autopilot features by implementing both of them.
 These parameters is used only for autopilot mode. All there parameters have default value.
 
 **[AndVersion sharedAndVersion].titleForNeedUpdate = @"Update your app for these awesome features"; 
-  //Default value is "It is recommended to update your applciation"**
+//Default value is "It is recommended to update your applciation"**
 
-**[AndVersion sharedAndVersion].titleForNewVersion = @"Thanks for updating"; 
-  //Default value is "New features in this version"**
+**[AndVersion sharedAndVersion].titleForNewVersion = @"Thanks for updating";
+//Default value is "New features in this version"**
 
-**[AndVersion sharedAndVersion].okButtonTitle = @"bla bla"; 
-  //Default value is "Okay"**
+**[AndVersion sharedAndVersion].okButtonTitle = @"OK"; 
+//Default value is "Okay"**
 
-**[AndVersion sharedAndVersion].continueButtonTitle = @"bla bla"; 
-  //Default value is "Continue"**
+**[AndVersion sharedAndVersion].continueButtonTitle = @"GO"; 
+//Default value is "Continue"**
 
-**[AndVersion sharedAndVersion].updateButtonTitle = @"bla bla"; 
-  //Default value is "Update"**
+**[AndVersion sharedAndVersion].updateButtonTitle = @"UPDATE"; 
+//Default value is "Update"**
 
 
 ## Author
