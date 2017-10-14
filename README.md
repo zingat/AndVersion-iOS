@@ -67,6 +67,8 @@ With this option, AndVersion notifies the current situation and this situation s
 Add this code to didFinishLaunchingWithOptions in your AppDelagate.m
 
 ```
+#import "AndVersion.h"
+
 @interface zngAppDelegate() <AndVersionDelegate>
 @end
 ```
@@ -118,7 +120,10 @@ With this option, AndVersion controls the parameters in json file and handles th
 Add this code to didFinishLaunchingWithOptions in your AppDelagate.m
 
 ```
+#import "AndVersion.h"
+```
 
+```
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     //if showAlertForNewVersion is set true, AndVersion shows whats new info view when the user must update his app. 
@@ -148,20 +153,30 @@ You can use callback and autopilot features by implementing both of them.
 
 These parameters is used only for autopilot mode. All there parameters have default value.
 
-**[AndVersion sharedAndVersion].titleForNeedUpdate = @"Update your app for these awesome features"; 
-//Default value is "It is recommended to update your applciation"**
+```
+[AndVersion sharedAndVersion].titleForNeedUpdate = @"Update your app for these awesome features";
+//Default value is "It is recommended to update your applciation"
+```
 
-**[AndVersion sharedAndVersion].titleForNewVersion = @"Thanks for updating";
-//Default value is "New features in this version"**
+```
+[AndVersion sharedAndVersion].titleForNewVersion = @"Thanks for updating";
+//Default value is "New features in this version"
+```
 
-**[AndVersion sharedAndVersion].okButtonTitle = @"OK"; 
-//Default value is "Okay"**
+```
+[AndVersion sharedAndVersion].okButtonTitle = @"OK";
+//Default value is "Okay"
+```
 
-**[AndVersion sharedAndVersion].continueButtonTitle = @"GO"; 
-//Default value is "Continue"**
+```
+[AndVersion sharedAndVersion].continueButtonTitle = @"GO";
+//Default value is "Continue"
+```
 
-**[AndVersion sharedAndVersion].updateButtonTitle = @"UPDATE"; 
-//Default value is "Update"**
+```
+[AndVersion sharedAndVersion].updateButtonTitle = @"UPDATE";
+//Default value is "Update"
+```
 
 
 ## Author
