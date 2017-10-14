@@ -254,7 +254,7 @@
 				ORGANIZATIONNAME = kadirkemal;
 				TargetAttributes = {
 					6003F589195388D20070C39A = {
-						DevelopmentTeam = J8ZY9APDCN;
+						DevelopmentTeam = 8B7B9E4FBZ;
 					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
@@ -531,7 +531,7 @@
 			baseConfigurationReference = C35A37B1996E89703DB6B45E /* Pods-AndVersion_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = J8ZY9APDCN;
+				DEVELOPMENT_TEAM = 8B7B9E4FBZ;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AndVersion/AndVersion-Prefix.pch";
 				INFOPLIST_FILE = "AndVersion/AndVersion-Info.plist";
@@ -547,7 +547,7 @@
 			baseConfigurationReference = DB612B8704C8152C01B762F7 /* Pods-AndVersion_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = J8ZY9APDCN;
+				DEVELOPMENT_TEAM = 8B7B9E4FBZ;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AndVersion/AndVersion-Prefix.pch";
 				INFOPLIST_FILE = "AndVersion/AndVersion-Info.plist";
