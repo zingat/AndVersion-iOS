@@ -11,11 +11,11 @@ This is the library that checks updates on Apple Store according to json file fr
 
 ## SCREENSHOT
 
-<img src="https://raw.githubusercontent.com/zingat/AndVersion-iOS/master/Example/images/must_update.png" width="100%">
+<img src="https://raw.githubusercontent.com/zingat/AndVersion-iOS/master/Example/images/must_update.png" width="30%">
 
-<img src="https://raw.githubusercontent.com/zingat/AndVersion-iOS/master/Example/images/need_to_update.png" width="100%">
+<img src="https://raw.githubusercontent.com/zingat/AndVersion-iOS/master/Example/images/need_to_update.png" width="30%">
 
-<img src="https://raw.githubusercontent.com/zingat/AndVersion-iOS/master/Example/images/new_version_is_running.png" width="100%">
+<img src="https://raw.githubusercontent.com/zingat/AndVersion-iOS/master/Example/images/new_version_is_running.png" width="30%">
 
 ### SAMPLE JSON FILE
 ```json
