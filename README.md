@@ -11,44 +11,40 @@ This is the library that checks updates on Apple Store according to json file fr
 
 ## SCREENSHOT
 
-<img src="https://raw.githubusercontent.com/zingat/AndVersion-iOS/master/Example/images/must_update.png" width="100%">
-
-<img src="https://raw.githubusercontent.com/zingat/AndVersion-iOS/master/Example/images/need_to_update.png" width="100%">
-
-<img src="https://raw.githubusercontent.com/zingat/AndVersion-iOS/master/Example/images/new_version_is_running.png" width="100%">
+<img src="https://raw.githubusercontent.com/zingat/AndVersion-iOS/master/Example/images/andVersion-ios.png" width="100%">
 
 ### SAMPLE JSON FILE
 ```json
 {
-  "AndVersion": {
-    "CurrentVersion": "1.8.3",
-    "MinVersion": "1.2.5",
-    "AppStoreId": "1088280260",
-    "WhatsNew": {
-      "en": [
-        "3D home tours (where offered by rental listing).",
-        "Minor enhancements to Schools information shown for a property",
-        "Bug fixes and performance improvements"
-      ],
-      "tr": [
-        "3D konut turu (danışman tarafından eklenmişse).",
-        "Bir emlak etrafında gösterilen okul bilgileri için iyileştirmeler",
-        "Hata düzeltmeleri ve performans iyileştirmeleri"
-      ]
-    }
-  }
+"AndVersion": {
+"CurrentVersion": "1.8.3",
+"MinVersion": "1.2.5",
+"AppStoreId": "1088280260",
+"WhatsNew": {
+"en": [
+"3D home tours (where offered by rental listing).",
+"Minor enhancements to Schools information shown for a property",
+"Bug fixes and performance improvements"
+],
+"tr": [
+"3D konut turu (danışman tarafından eklenmişse).",
+"Bir emlak etrafında gösterilen okul bilgileri için iyileştirmeler",
+"Hata düzeltmeleri ve performans iyileştirmeleri"
+]
+}
+}
 }
 
 ```
 All fields are mandatory. If one of them is missing in the json file, AndVersion-iOS would not control the versions.
 
-**CurrentVersion :** The version code on Apple Store. 
+**CurrentVersion :** The version code on Apple Store.
 
 **MinVersion :** The lowest version code that is wanted to be supported.
 
 **AppStoreId :** Current apllication's store id.
 
-**WhatsNew :** The list of new features that are added in the CurrentVersion. 
+**WhatsNew :** The list of new features that are added in the CurrentVersion.
 The key of inner object should be **locale languge code** and the value of inner object shoul be **string array**.
 
 
@@ -71,6 +67,8 @@ With this option, AndVersion notifies the current situation and this situation s
 Add this code to didFinishLaunchingWithOptions in your AppDelagate.m
 
 ```
+#import "AndVersion.h"
+
 @interface zngAppDelegate() <AndVersionDelegate>
 @end
 ```
@@ -78,39 +76,39 @@ Add this code to didFinishLaunchingWithOptions in your AppDelagate.m
 ```
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [AndVersion sharedAndVersion].delegate = self;
-    [[AndVersion sharedAndVersion] checkVersionWithUrl:@"https://andversion.com/sample/demoIOS.json"];
-    
-    // Override point for customization after application launch.
-    return YES;
+[AndVersion sharedAndVersion].delegate = self;
+[[AndVersion sharedAndVersion] checkVersionWithUrl:@"https://andversion.com/sample/demoIOS.json"];
+
+// Override point for customization after application launch.
+return YES;
 }
 ```
 
-All methods in AndVersionDelegate are optional. You can implement only needed ones. 
+All methods in AndVersionDelegate are optional. You can implement only needed ones.
 ```
 -(void) didAndVersionFindNoUpdate{
-    NSLog(@"No New Version");
+NSLog(@"No New Version");
 }
 
 -(void) didAndVersionFindOptionalUpdate:(NSArray <NSString *> *) whatsNew{
-    NSLog(@"Optional New Version");
-    for(NSString *wNew in whatsNew){
-        NSLog(@"%@", wNew);
-    }
+NSLog(@"Optional New Version");
+for(NSString *wNew in whatsNew){
+NSLog(@"%@", wNew);
+}
 }
 
 -(void) didAndVersionFindMandatoryUpdate:(NSArray <NSString *> *) whatsNew{
-    NSLog(@"Mandatory New Version");
-    for(NSString *wNew in whatsNew){
-        NSLog(@"%@", wNew);
-    }
+NSLog(@"Mandatory New Version");
+for(NSString *wNew in whatsNew){
+NSLog(@"%@", wNew);
+}
 }
 
 -(void) didAndVersionMeetNewVersion:(NSArray <NSString *> *) whatsNew{
-    NSLog(@"Meet New Version");
-    for(NSString *wNew in whatsNew){
-        NSLog(@"%@", wNew);
-    }
+NSLog(@"Meet New Version");
+for(NSString *wNew in whatsNew){
+NSLog(@"%@", wNew);
+}
 }
 
 
@@ -122,24 +120,27 @@ With this option, AndVersion controls the parameters in json file and handles th
 Add this code to didFinishLaunchingWithOptions in your AppDelagate.m
 
 ```
+#import "AndVersion.h"
+```
 
+```
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    //if showAlertForNewVersion is set true, AndVersion shows whats new info view when the user must update his app. 
-    //The user can not use the app without updating
-    [AndVersion sharedAndVersion].showAlertForMandatoryUpdate = YES;
-        
-    //if showAlertForOptionalUpdate is set true, AndVersion shows whats new info view when the app version is old but ok. 
-    //The user can use the app without updating
-    [AndVersion sharedAndVersion].showAlertForOptionalUpdate = YES;
+//if showAlertForNewVersion is set true, AndVersion shows whats new info view when the user must update his app.
+//The user can not use the app without updating
+[AndVersion sharedAndVersion].showAlertForMandatoryUpdate = YES;
 
-    //if showAlertForNewVersion is set true, AndVersion shows whats new info view when the user updates his app. 
-    [AndVersion sharedAndVersion].showAlertForNewVersion = YES;
-    
-    [[AndVersion sharedAndVersion] checkVersionWithUrl:@"https://andversion.com/sample/demoIOS.json"];
-    
-    // Override point for customization after application launch.
-    return YES;
+//if showAlertForOptionalUpdate is set true, AndVersion shows whats new info view when the app version is old but ok.
+//The user can use the app without updating
+[AndVersion sharedAndVersion].showAlertForOptionalUpdate = YES;
+
+//if showAlertForNewVersion is set true, AndVersion shows whats new info view when the user updates his app.
+[AndVersion sharedAndVersion].showAlertForNewVersion = YES;
+
+[[AndVersion sharedAndVersion] checkVersionWithUrl:@"https://andversion.com/sample/demoIOS.json"];
+
+// Override point for customization after application launch.
+return YES;
 }
 
 ```
@@ -152,25 +153,84 @@ You can use callback and autopilot features by implementing both of them.
 
 These parameters is used only for autopilot mode. All there parameters have default value.
 
-**[AndVersion sharedAndVersion].titleForNeedUpdate = @"Update your app for these awesome features"; 
-  //Default value is "It is recommended to update your applciation"**
 
-**[AndVersion sharedAndVersion].titleForNewVersion = @"Thanks for updating"; 
-  //Default value is "New features in this version"**
+```
+[AndVersion sharedAndVersion].configuration.infoViewBacgroundColor = [UIColor blueColor];
+//Default value is [UIColor blackColor]
 
-**[AndVersion sharedAndVersion].okButtonTitle = @"bla bla"; 
-  //Default value is "Okay"**
+[AndVersion sharedAndVersion].configuration.infoViewBacgroundAlpha = 0.5;
+//Default value is 0.85
 
-**[AndVersion sharedAndVersion].continueButtonTitle = @"bla bla"; 
-  //Default value is "Continue"**
+[AndVersion sharedAndVersion].configuration.infoViewTableSeperatorColor = [UIColor greenColor];
+//Default value is "89c400"
+```
 
-**[AndVersion sharedAndVersion].updateButtonTitle = @"bla bla"; 
-  //Default value is "Update"**
+```
+[AndVersion sharedAndVersion].configuration.infoViewTitleColor = [UIColor redColor];
+//Default value is [UIColor blackColor]
+
+[AndVersion sharedAndVersion].configuration.infoinfoViewTitleFont = [UIFont fontWithName:@"FontName" size:16];
+//Default value is [UIFont fontWithName:@"Verdana" size:14]
+
+[AndVersion sharedAndVersion].configuration.infoViewTitleForNeedUpdate = @"Update your app for these awesome features";
+//Default value is "It is recommended to update your applciation"
+
+[AndVersion sharedAndVersion].configuration.infoViewTitleForNewVersion = @"Thanks for updating";
+//Default value is "New features in this version"
+```
+
+```
+[AndVersion sharedAndVersion].configuration.infoViewButtonFont = [UIFont fontWithName:@"FontName" size:14];
+//Default value is [UIFont fontWithName:@"Verdana" size:14]
+```
+
+```
+[AndVersion sharedAndVersion].configuration.infoViewOKButtonColor = [UIColor redColor];
+//Default value is "89c400"
+
+[AndVersion sharedAndVersion].configuration.infoViewOKButtonTextColor = [UIColor blackColor];
+//Default value is [UIColor whiteColor]
+
+[AndVersion sharedAndVersion].configuration.infoViewOKButtonTitle = @"OK";
+//Default value is "Okay"
+```
+
+```
+[AndVersion sharedAndVersion].configuration.infoViewContinueButtonColor = [UIColor redColor];
+//Default value is "d80e2b"
+
+[AndVersion sharedAndVersion].configuration.infoViewUpdateButtonTextColor = [UIColor blackColor];
+//Default value is [UIColor whiteColor]
+
+[AndVersion sharedAndVersion].configuration.infoViewContinueButtonTitle = @"GO";
+//Default value is "Continue"
+```
+
+```
+[AndVersion sharedAndVersion].configuration.infoViewUpdateButtonColor = [UIColor redColor];
+//Default value is "89c400"
+
+[AndVersion sharedAndVersion].configuration.infoViewUpdateButtonTextColor = [UIColor blackColor];
+//Default value is [UIColor whiteColor]
+
+[AndVersion sharedAndVersion].configuration.infoViewUpdateButtonTitle = @"UPDATE";
+//Default value is "Update"
+```
+
+```
+[AndVersion sharedAndVersion].configuration.infoViewWhatsNewTextColor = [UIColor blackColor];
+//Default value is [UIColor whiteColor]
+
+[AndVersion sharedAndVersion].configuration.infoViewWhatsNewFont = [UIFont fontWithName:@"FontName" size:10];
+//Default value is [UIFont fontWithName:@"Verdana" size:12]
+```
 
 
 ## Author
 
-Kadir Kemal Dursun, https://github.com/kadirkemal
+Zingat Mobile Team
++ Kadir Kemal Dursun, https://github.com/KadirKemal
++ Muhammed Mortgy, https://github.com/Mortgy
 
 ## License
 

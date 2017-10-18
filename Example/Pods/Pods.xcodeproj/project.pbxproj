@@ -7,29 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		072B86441F972F9200FDB337 /* AndVersionConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 072B86421F972F9200FDB337 /* AndVersionConfiguration.h */; };
-		072B86451F972F9200FDB337 /* AndVersionConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 072B86431F972F9200FDB337 /* AndVersionConfiguration.m */; };
-		0770D85C1F86006C009DEB15 /* AndVersionAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0770D85A1F86006C009DEB15 /* AndVersionAlertView.h */; };
-		0770D85D1F86006C009DEB15 /* AndVersionAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0770D85B1F86006C009DEB15 /* AndVersionAlertView.m */; };
-		0770D8601F861286009DEB15 /* UILabel+Misc.h in Headers */ = {isa = PBXBuildFile; fileRef = 0770D85E1F861286009DEB15 /* UILabel+Misc.h */; };
-		0770D8611F861286009DEB15 /* UILabel+Misc.m in Sources */ = {isa = PBXBuildFile; fileRef = 0770D85F1F861286009DEB15 /* UILabel+Misc.m */; };
-		0770D8641F865298009DEB15 /* UIColor+AndVersionColors.h in Headers */ = {isa = PBXBuildFile; fileRef = 0770D8621F865298009DEB15 /* UIColor+AndVersionColors.h */; };
-		0770D8651F865298009DEB15 /* UIColor+AndVersionColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 0770D8631F865298009DEB15 /* UIColor+AndVersionColors.m */; };
-		0C09FC13778AAABA916B523AF3B0EDF8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		0856CA0012296DC622A3BF58257E1AB8 /* UILabel+Misc.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD0872D5EBC7D0B9182503376991716 /* UILabel+Misc.m */; };
+		224AC42BC93F71A9B9FB86EDB361DD25 /* UIColor+AndVersionColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B94B55F4C37255595E4C44AA72E6401 /* UIColor+AndVersionColors.m */; };
 		272F7E5C0F6D670D49AB69631E777A9A /* Pods-AndVersion_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 818A6DE9E0F8B726FAA85BC9BAE43F0D /* Pods-AndVersion_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3431B8090671786B0819106F184C8659 /* NSString+CheckVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = DA5688738231633AE1590A4D9F76CFCD /* NSString+CheckVersion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4EE734E3A92864694EA4A840DD4CAA01 /* NSString+CheckVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = 69D3EFD024A802ABB02CE6DC1D191C9D /* NSString+CheckVersion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		58344C3435A862CD5C4867F052F49336 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		5A8CAD69ED0959078EBF0005E03ADF12 /* AndVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = A2F7E162EB15164310DC199CA344C078 /* AndVersion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C701746AE24B3EEA8FC5AFDF77A9562 /* AndVersionAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C0655304542598999BAE1C1408A449 /* AndVersionAlertView.m */; };
+		6007FF2599A3EDC9D4B31ED2DC2943D5 /* UILabel+Misc.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B063F22A17684FF242501576D315E0F /* UILabel+Misc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		77B5950D78AF50D11AABB833C659D80A /* AndVersion-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F2B2C4573536CE663D94F2F89E3304E /* AndVersion-dummy.m */; };
+		788169AAB63ACCAAB993CA5EC9C1CFE5 /* UIColor+AndVersionColors.h in Headers */ = {isa = PBXBuildFile; fileRef = F2D5E6ED91B93D780351F92080CC5E24 /* UIColor+AndVersionColors.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8270E6E1C7E1C4100057FF232C5544DF /* Pods-AndVersion_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59C5A7DBDAD3A81F712412D2018EBBE2 /* Pods-AndVersion_Tests-dummy.m */; };
 		844721C1CC4C00C4EF61A310A4CC61CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		8795FC8EDD0D5885B80D79FE50C2E682 /* NSString+CheckVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 485C9B2B0A7A2C8A32D58C130B09B0DD /* NSString+CheckVersion.m */; };
-		891A8D322A4C56C2EC1A608AFA945E2D /* AndVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = 67BCB3F2377BADCBAD72DD097DF16A0A /* AndVersion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		85B2176EC460447BB68B12F708CFDAE7 /* AndVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = E221619713744E17C312356A7D383BAB /* AndVersion.m */; };
 		9271B2656D47AACAA474F3783EE2CFC6 /* Pods-AndVersion_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CE78A9DA1B4292C89763058452199C /* Pods-AndVersion_Example-dummy.m */; };
-		9319B4A49363D5F2464632942D01BD1E /* RemoteVersionInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = C61D2770D59DBDEFEF57A7AC2915A403 /* RemoteVersionInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A589DE41BF7D03953CA86F68570D8EBC /* Pods-AndVersion_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C59878C0B7D0CF22CA774A40EF1A71F /* Pods-AndVersion_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C3BE11A656CF0C8EB256C6009E4C4CD9 /* AndVersion-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 000F86D1E0A2C3D780977B12A0F6C870 /* AndVersion-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DDE3D95970CA7B508578DB3BED49ACCE /* AndVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8DF9051F0695C0B3FDFB4615A2A3A3 /* AndVersion.m */; };
-		E068847180084DA3B5E1E2BCB83C1106 /* AndVersion-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F2B2C4573536CE663D94F2F89E3304E /* AndVersion-dummy.m */; };
-		F0DB5D471B04E4C580DCE60D8BACA4A2 /* RemoteVersionInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A8AB7E4D11C8383C7A6A65167CC268B8 /* RemoteVersionInfo.m */; };
+		B01BD41EF30D32035587E456E399FF12 /* RemoteVersionInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 53668AB3165652D5009F76508BEF17A9 /* RemoteVersionInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4B3A4786504A7FE3E0CA7B03D8EEFEA /* AndVersion-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 000F86D1E0A2C3D780977B12A0F6C870 /* AndVersion-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB5C882155006A7ABAC0D78FEF1632E1 /* RemoteVersionInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F03BA8909E41962B1B80F7AF9A9331 /* RemoteVersionInfo.m */; };
+		EF98856D5A0355384DAE2BE64CB07CFD /* AndVersionAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 445C16EA9F766A1F96A607E2A0AAA9FE /* AndVersionAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F7C3515BDEA4BEEE9C7217B218016C14 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		FBC4A19C23D9B0243380CC318B338E5C /* NSString+CheckVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 5853573B65616D9FDB2AC302267BBD18 /* NSString+CheckVersion.m */; };
+		FCEB9463D379F24ED9C5B51DCBBB8993 /* AndVersionConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B0631CD6727A7185DA5EE22D7FDF5B1 /* AndVersionConfiguration.m */; };
+		FE3E37F9849A5027DB23842FA76DDB81 /* AndVersionConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 386C6FCEC4F8B35F1C916DB5E39ADC14 /* AndVersionConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,63 +37,63 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 338EE69E710B55859A9B366F9F98FC73;
+			remoteGlobalIDString = 38E3B44B0D14715191AE6D7F174A7C3A;
 			remoteInfo = AndVersion;
 		};
 		AA6E42E1DDA815878F329C6CE17BDB68 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 338EE69E710B55859A9B366F9F98FC73;
+			remoteGlobalIDString = 38E3B44B0D14715191AE6D7F174A7C3A;
 			remoteInfo = AndVersion;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		000F86D1E0A2C3D780977B12A0F6C870 /* AndVersion-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AndVersion-umbrella.h"; sourceTree = "<group>"; };
-		01ACC85F21B9DBFE50F895CC3ADD287E /* Pods_AndVersion_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AndVersion_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		072B86421F972F9200FDB337 /* AndVersionConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AndVersionConfiguration.h; sourceTree = "<group>"; };
-		072B86431F972F9200FDB337 /* AndVersionConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AndVersionConfiguration.m; sourceTree = "<group>"; };
-		0770D85A1F86006C009DEB15 /* AndVersionAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AndVersionAlertView.h; sourceTree = "<group>"; };
-		0770D85B1F86006C009DEB15 /* AndVersionAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AndVersionAlertView.m; sourceTree = "<group>"; };
-		0770D85E1F861286009DEB15 /* UILabel+Misc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+Misc.h"; sourceTree = "<group>"; };
-		0770D85F1F861286009DEB15 /* UILabel+Misc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Misc.m"; sourceTree = "<group>"; };
-		0770D8621F865298009DEB15 /* UIColor+AndVersionColors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+AndVersionColors.h"; sourceTree = "<group>"; };
-		0770D8631F865298009DEB15 /* UIColor+AndVersionColors.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+AndVersionColors.m"; sourceTree = "<group>"; };
+		01ACC85F21B9DBFE50F895CC3ADD287E /* Pods_AndVersion_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AndVersion_Tests.framework; path = "Pods-AndVersion_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		175A1D08A1E88BA4AAD96459A0A4C2E1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B94B55F4C37255595E4C44AA72E6401 /* UIColor+AndVersionColors.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor+AndVersionColors.m"; sourceTree = "<group>"; };
 		2C74A90433A84306175CCFDB8397701A /* AndVersion.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AndVersion.xcconfig; sourceTree = "<group>"; };
 		2F2B2C4573536CE663D94F2F89E3304E /* AndVersion-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AndVersion-dummy.m"; sourceTree = "<group>"; };
 		3084B94E304492CD0334DF79E72073C5 /* Pods-AndVersion_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AndVersion_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		485C9B2B0A7A2C8A32D58C130B09B0DD /* NSString+CheckVersion.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+CheckVersion.m"; sourceTree = "<group>"; };
+		386C6FCEC4F8B35F1C916DB5E39ADC14 /* AndVersionConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AndVersionConfiguration.h; sourceTree = "<group>"; };
+		445C16EA9F766A1F96A607E2A0AAA9FE /* AndVersionAlertView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AndVersionAlertView.h; sourceTree = "<group>"; };
+		46F03BA8909E41962B1B80F7AF9A9331 /* RemoteVersionInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RemoteVersionInfo.m; sourceTree = "<group>"; };
 		4C59878C0B7D0CF22CA774A40EF1A71F /* Pods-AndVersion_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AndVersion_Tests-umbrella.h"; sourceTree = "<group>"; };
+		53668AB3165652D5009F76508BEF17A9 /* RemoteVersionInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RemoteVersionInfo.h; sourceTree = "<group>"; };
 		54039E294C0551751544FE36EC8C6C6D /* Pods-AndVersion_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AndVersion_Example-frameworks.sh"; sourceTree = "<group>"; };
 		571AA9BA035D14EA10E140BDD6FCD88C /* Pods-AndVersion_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AndVersion_Tests-resources.sh"; sourceTree = "<group>"; };
+		5853573B65616D9FDB2AC302267BBD18 /* NSString+CheckVersion.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+CheckVersion.m"; sourceTree = "<group>"; };
 		59C5A7DBDAD3A81F712412D2018EBBE2 /* Pods-AndVersion_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AndVersion_Tests-dummy.m"; sourceTree = "<group>"; };
+		5B063F22A17684FF242501576D315E0F /* UILabel+Misc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UILabel+Misc.h"; sourceTree = "<group>"; };
 		5B887A99C20C5D44C1441EDCBB50878B /* Pods-AndVersion_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AndVersion_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		6025E1A66478D2BDFECD359C73B35F20 /* Pods-AndVersion_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AndVersion_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		61C0655304542598999BAE1C1408A449 /* AndVersionAlertView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AndVersionAlertView.m; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		67BCB3F2377BADCBAD72DD097DF16A0A /* AndVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AndVersion.h; sourceTree = "<group>"; };
+		69D3EFD024A802ABB02CE6DC1D191C9D /* NSString+CheckVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+CheckVersion.h"; sourceTree = "<group>"; };
 		69FBA0AF63DC010BBA0B066FC0DFEC1D /* Pods-AndVersion_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AndVersion_Example.release.xcconfig"; sourceTree = "<group>"; };
 		754725FD286971D8328145797E440F81 /* Pods-AndVersion_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AndVersion_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		7BA0F018ADC293647C024A21E2BAA4ED /* Pods-AndVersion_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AndVersion_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		818A6DE9E0F8B726FAA85BC9BAE43F0D /* Pods-AndVersion_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AndVersion_Example-umbrella.h"; sourceTree = "<group>"; };
 		8CC55A8025A5A5802B440D85868CA208 /* Pods-AndVersion_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AndVersion_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		8DBAB8843890DB23879DE35F26B91F0F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8E8DF9051F0695C0B3FDFB4615A2A3A3 /* AndVersion.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AndVersion.m; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		96C691DB41467BEF0E6A103554D148A4 /* Pods-AndVersion_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AndVersion_Tests.modulemap"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		96C691DB41467BEF0E6A103554D148A4 /* Pods-AndVersion_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-AndVersion_Tests.modulemap"; sourceTree = "<group>"; };
 		99CE78A9DA1B4292C89763058452199C /* Pods-AndVersion_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AndVersion_Example-dummy.m"; sourceTree = "<group>"; };
+		9B0631CD6727A7185DA5EE22D7FDF5B1 /* AndVersionConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AndVersionConfiguration.m; sourceTree = "<group>"; };
 		9B101E46D23E5D33564EC9E5803B33CD /* Pods-AndVersion_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AndVersion_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		9D4AAEF3937AD6FF10AC3B7C319BD7EA /* Pods-AndVersion_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AndVersion_Example-resources.sh"; sourceTree = "<group>"; };
-		A8AB7E4D11C8383C7A6A65167CC268B8 /* RemoteVersionInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RemoteVersionInfo.m; sourceTree = "<group>"; };
+		A2F7E162EB15164310DC199CA344C078 /* AndVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AndVersion.h; sourceTree = "<group>"; };
 		B5A2648BA6371FB6CEFB5371432B185E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C61D2770D59DBDEFEF57A7AC2915A403 /* RemoteVersionInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RemoteVersionInfo.h; sourceTree = "<group>"; };
+		BBD0872D5EBC7D0B9182503376991716 /* UILabel+Misc.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Misc.m"; sourceTree = "<group>"; };
 		CB6E9CF8888B074E334EE4FF78FD1762 /* Pods-AndVersion_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AndVersion_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		D1C14DC6FA02E69A4B11FD65D1B32073 /* AndVersion.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AndVersion.modulemap; sourceTree = "<group>"; };
-		D4C035DCE52ECEA9BEB26D026BF29AB3 /* AndVersion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AndVersion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA5688738231633AE1590A4D9F76CFCD /* NSString+CheckVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+CheckVersion.h"; sourceTree = "<group>"; };
-		EDB20740B015E47F7E33E26458575FB6 /* Pods_AndVersion_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AndVersion_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE2F8A91053FE90298058A6B770D02AB /* Pods-AndVersion_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AndVersion_Example.modulemap"; sourceTree = "<group>"; };
+		D1C14DC6FA02E69A4B11FD65D1B32073 /* AndVersion.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AndVersion.modulemap; sourceTree = "<group>"; };
+		D4C035DCE52ECEA9BEB26D026BF29AB3 /* AndVersion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AndVersion.framework; path = AndVersion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E221619713744E17C312356A7D383BAB /* AndVersion.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AndVersion.m; sourceTree = "<group>"; };
+		EDB20740B015E47F7E33E26458575FB6 /* Pods_AndVersion_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AndVersion_Example.framework; path = "Pods-AndVersion_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE2F8A91053FE90298058A6B770D02AB /* Pods-AndVersion_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-AndVersion_Example.modulemap"; sourceTree = "<group>"; };
+		F2D5E6ED91B93D780351F92080CC5E24 /* UIColor+AndVersionColors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor+AndVersionColors.h"; sourceTree = "<group>"; };
 		FF06AEC81A6131CA625E459920287C81 /* AndVersion-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AndVersion-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,14 +106,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		64F7DF60C1004E5E3B954D642ECF0499 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0C09FC13778AAABA916B523AF3B0EDF8 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A1DECC05669DB30DF4B2305708033AC3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -122,30 +114,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DAEE96CF62135129538F467F7393DEAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58344C3435A862CD5C4867F052F49336 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0B1C34264EFCDEB9A95C7C4F0A44C24A /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				67BCB3F2377BADCBAD72DD097DF16A0A /* AndVersion.h */,
-				8E8DF9051F0695C0B3FDFB4615A2A3A3 /* AndVersion.m */,
-				DA5688738231633AE1590A4D9F76CFCD /* NSString+CheckVersion.h */,
-				485C9B2B0A7A2C8A32D58C130B09B0DD /* NSString+CheckVersion.m */,
-				C61D2770D59DBDEFEF57A7AC2915A403 /* RemoteVersionInfo.h */,
-				A8AB7E4D11C8383C7A6A65167CC268B8 /* RemoteVersionInfo.m */,
-				0770D85A1F86006C009DEB15 /* AndVersionAlertView.h */,
-				0770D85B1F86006C009DEB15 /* AndVersionAlertView.m */,
-				0770D85E1F861286009DEB15 /* UILabel+Misc.h */,
-				0770D85F1F861286009DEB15 /* UILabel+Misc.m */,
-				0770D8621F865298009DEB15 /* UIColor+AndVersionColors.h */,
-				0770D8631F865298009DEB15 /* UIColor+AndVersionColors.m */,
-				072B86421F972F9200FDB337 /* AndVersionConfiguration.h */,
-				072B86431F972F9200FDB337 /* AndVersionConfiguration.m */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		13DA7946C2ACB4D1685DDF33EBF7E087 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +133,37 @@
 				01ACC85F21B9DBFE50F895CC3ADD287E /* Pods_AndVersion_Tests.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		381DA65F36A9729FEDB70B5630A6727B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A2F7E162EB15164310DC199CA344C078 /* AndVersion.h */,
+				E221619713744E17C312356A7D383BAB /* AndVersion.m */,
+				445C16EA9F766A1F96A607E2A0AAA9FE /* AndVersionAlertView.h */,
+				61C0655304542598999BAE1C1408A449 /* AndVersionAlertView.m */,
+				386C6FCEC4F8B35F1C916DB5E39ADC14 /* AndVersionConfiguration.h */,
+				9B0631CD6727A7185DA5EE22D7FDF5B1 /* AndVersionConfiguration.m */,
+				69D3EFD024A802ABB02CE6DC1D191C9D /* NSString+CheckVersion.h */,
+				5853573B65616D9FDB2AC302267BBD18 /* NSString+CheckVersion.m */,
+				53668AB3165652D5009F76508BEF17A9 /* RemoteVersionInfo.h */,
+				46F03BA8909E41962B1B80F7AF9A9331 /* RemoteVersionInfo.m */,
+				F2D5E6ED91B93D780351F92080CC5E24 /* UIColor+AndVersionColors.h */,
+				2B94B55F4C37255595E4C44AA72E6401 /* UIColor+AndVersionColors.m */,
+				5B063F22A17684FF242501576D315E0F /* UILabel+Misc.h */,
+				BBD0872D5EBC7D0B9182503376991716 /* UILabel+Misc.m */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		42E46A2D4E5F2983FDCEA6DE63C9F1A2 /* AndVersion */ = {
+			isa = PBXGroup;
+			children = (
+				381DA65F36A9729FEDB70B5630A6727B /* Classes */,
+			);
+			name = AndVersion;
+			path = AndVersion;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -192,14 +202,6 @@
 			);
 			name = "Pods-AndVersion_Example";
 			path = "Target Support Files/Pods-AndVersion_Example";
-			sourceTree = "<group>";
-		};
-		B8E8EBDC55ECA8E0A0E8F41F7C7B456B /* AndVersion */ = {
-			isa = PBXGroup;
-			children = (
-				0B1C34264EFCDEB9A95C7C4F0A44C24A /* Classes */,
-			);
-			path = AndVersion;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -261,7 +263,7 @@
 		F43D6780FFF75FA602CD9C4210B30D91 /* AndVersion */ = {
 			isa = PBXGroup;
 			children = (
-				B8E8EBDC55ECA8E0A0E8F41F7C7B456B /* AndVersion */,
+				42E46A2D4E5F2983FDCEA6DE63C9F1A2 /* AndVersion */,
 				F0C941C87B503102D3F86516A190974E /* Support Files */,
 			);
 			name = AndVersion;
@@ -271,6 +273,21 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		42363AE0F8D99C741FF1414816BAA3BC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4B3A4786504A7FE3E0CA7B03D8EEFEA /* AndVersion-umbrella.h in Headers */,
+				5A8CAD69ED0959078EBF0005E03ADF12 /* AndVersion.h in Headers */,
+				EF98856D5A0355384DAE2BE64CB07CFD /* AndVersionAlertView.h in Headers */,
+				FE3E37F9849A5027DB23842FA76DDB81 /* AndVersionConfiguration.h in Headers */,
+				4EE734E3A92864694EA4A840DD4CAA01 /* NSString+CheckVersion.h in Headers */,
+				B01BD41EF30D32035587E456E399FF12 /* RemoteVersionInfo.h in Headers */,
+				788169AAB63ACCAAB993CA5EC9C1CFE5 /* UIColor+AndVersionColors.h in Headers */,
+				6007FF2599A3EDC9D4B31ED2DC2943D5 /* UILabel+Misc.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6321DDBF3B3CFC1DA338BBA7273333FC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -287,31 +304,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9A0877E488B92027702B3973FF6BCBC2 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0770D85C1F86006C009DEB15 /* AndVersionAlertView.h in Headers */,
-				C3BE11A656CF0C8EB256C6009E4C4CD9 /* AndVersion-umbrella.h in Headers */,
-				0770D8641F865298009DEB15 /* UIColor+AndVersionColors.h in Headers */,
-				891A8D322A4C56C2EC1A608AFA945E2D /* AndVersion.h in Headers */,
-				3431B8090671786B0819106F184C8659 /* NSString+CheckVersion.h in Headers */,
-				072B86441F972F9200FDB337 /* AndVersionConfiguration.h in Headers */,
-				9319B4A49363D5F2464632942D01BD1E /* RemoteVersionInfo.h in Headers */,
-				0770D8601F861286009DEB15 /* UILabel+Misc.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		338EE69E710B55859A9B366F9F98FC73 /* AndVersion */ = {
+		38E3B44B0D14715191AE6D7F174A7C3A /* AndVersion */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 797A39480AF50900C638DD7BCE840DAE /* Build configuration list for PBXNativeTarget "AndVersion" */;
+			buildConfigurationList = 41DB3D38A6C8641CADF744311B3A35D4 /* Build configuration list for PBXNativeTarget "AndVersion" */;
 			buildPhases = (
-				59589DAE0006FD3AC0A6910F46DE36AC /* Sources */,
-				64F7DF60C1004E5E3B954D642ECF0499 /* Frameworks */,
-				9A0877E488B92027702B3973FF6BCBC2 /* Headers */,
+				66DA2ABB7ED9320BDD470E79876D83C0 /* Sources */,
+				DAEE96CF62135129538F467F7393DEAB /* Frameworks */,
+				42363AE0F8D99C741FF1414816BAA3BC /* Headers */,
 			);
 			buildRules = (
 			);
@@ -379,7 +381,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				338EE69E710B55859A9B366F9F98FC73 /* AndVersion */,
+				38E3B44B0D14715191AE6D7F174A7C3A /* AndVersion */,
 				7B76EA400128342A21A46CD177F53C51 /* Pods-AndVersion_Example */,
 				F6F73139F49983134D9CC9C2FD4A41B5 /* Pods-AndVersion_Tests */,
 			);
@@ -387,18 +389,18 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		59589DAE0006FD3AC0A6910F46DE36AC /* Sources */ = {
+		66DA2ABB7ED9320BDD470E79876D83C0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0770D8611F861286009DEB15 /* UILabel+Misc.m in Sources */,
-				0770D85D1F86006C009DEB15 /* AndVersionAlertView.m in Sources */,
-				072B86451F972F9200FDB337 /* AndVersionConfiguration.m in Sources */,
-				E068847180084DA3B5E1E2BCB83C1106 /* AndVersion-dummy.m in Sources */,
-				DDE3D95970CA7B508578DB3BED49ACCE /* AndVersion.m in Sources */,
-				8795FC8EDD0D5885B80D79FE50C2E682 /* NSString+CheckVersion.m in Sources */,
-				F0DB5D471B04E4C580DCE60D8BACA4A2 /* RemoteVersionInfo.m in Sources */,
-				0770D8651F865298009DEB15 /* UIColor+AndVersionColors.m in Sources */,
+				77B5950D78AF50D11AABB833C659D80A /* AndVersion-dummy.m in Sources */,
+				85B2176EC460447BB68B12F708CFDAE7 /* AndVersion.m in Sources */,
+				5C701746AE24B3EEA8FC5AFDF77A9562 /* AndVersionAlertView.m in Sources */,
+				FCEB9463D379F24ED9C5B51DCBBB8993 /* AndVersionConfiguration.m in Sources */,
+				FBC4A19C23D9B0243380CC318B338E5C /* NSString+CheckVersion.m in Sources */,
+				EB5C882155006A7ABAC0D78FEF1632E1 /* RemoteVersionInfo.m in Sources */,
+				224AC42BC93F71A9B9FB86EDB361DD25 /* UIColor+AndVersionColors.m in Sources */,
+				0856CA0012296DC622A3BF58257E1AB8 /* UILabel+Misc.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,13 +426,13 @@
 		11F231F6AB141ECFA7DA7DCC7702A1A2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AndVersion;
-			target = 338EE69E710B55859A9B366F9F98FC73 /* AndVersion */;
+			target = 38E3B44B0D14715191AE6D7F174A7C3A /* AndVersion */;
 			targetProxy = 7BBDE5D30CF752F86D625B0851E1B6CE /* PBXContainerItemProxy */;
 		};
 		E92DE88165273AF7424FFA49C3455048 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AndVersion;
-			target = 338EE69E710B55859A9B366F9F98FC73 /* AndVersion */;
+			target = 38E3B44B0D14715191AE6D7F174A7C3A /* AndVersion */;
 			targetProxy = AA6E42E1DDA815878F329C6CE17BDB68 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -556,6 +558,38 @@
 			};
 			name = Debug;
 		};
+		6D0384482A5F079F5CC2E02CDE8CB83B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C74A90433A84306175CCFDB8397701A /* AndVersion.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AndVersion/AndVersion-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AndVersion/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AndVersion/AndVersion.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AndVersion;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		717E77604BFBB04BEAF56608A1CB2EDE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -600,38 +634,6 @@
 			};
 			name = Release;
 		};
-		816EAB3CDA1A697D036F11B825E346FB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2C74A90433A84306175CCFDB8397701A /* AndVersion.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/AndVersion/AndVersion-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AndVersion/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AndVersion/AndVersion.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = AndVersion;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		C272F38D5FD91419FE2768364F11BD1E /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 69FBA0AF63DC010BBA0B066FC0DFEC1D /* Pods-AndVersion_Example.release.xcconfig */;
@@ -660,6 +662,38 @@
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Pods_AndVersion_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D365D4B3021277B54B15C8D6BE676B0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C74A90433A84306175CCFDB8397701A /* AndVersion.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AndVersion/AndVersion-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AndVersion/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AndVersion/AndVersion.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AndVersion;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -704,38 +738,6 @@
 			};
 			name = Debug;
 		};
-		EA5A51BAB6A7B55F20F9613A4C4023F0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2C74A90433A84306175CCFDB8397701A /* AndVersion.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/AndVersion/AndVersion-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AndVersion/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AndVersion/AndVersion.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = AndVersion;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -748,11 +750,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		797A39480AF50900C638DD7BCE840DAE /* Build configuration list for PBXNativeTarget "AndVersion" */ = {
+		41DB3D38A6C8641CADF744311B3A35D4 /* Build configuration list for PBXNativeTarget "AndVersion" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				816EAB3CDA1A697D036F11B825E346FB /* Debug */,
-				EA5A51BAB6A7B55F20F9613A4C4023F0 /* Release */,
+				6D0384482A5F079F5CC2E02CDE8CB83B /* Debug */,
+				D365D4B3021277B54B15C8D6BE676B0E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

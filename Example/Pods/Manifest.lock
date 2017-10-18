@@ -1,5 +1,5 @@
 PODS:
-  - AndVersion (0.1.0)
+  - AndVersion (1.0.0)
 
 DEPENDENCIES:
   - AndVersion (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  AndVersion: a260c4aaa02b1444a1408f300cdd9be9f0db4c42
+  AndVersion: d0ddf71f1a74783bc80e4a177c6f8b69fe4d3cb0
 
 PODFILE CHECKSUM: 7eac70f3c8db99372b2f9c70b1ad75f3a9a221a2
 

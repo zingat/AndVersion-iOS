@@ -11,8 +11,12 @@
 #endif
 
 #import "AndVersion.h"
+#import "AndVersionAlertView.h"
+#import "AndVersionConfiguration.h"
 #import "NSString+CheckVersion.h"
 #import "RemoteVersionInfo.h"
+#import "UIColor+AndVersionColors.h"
+#import "UILabel+Misc.h"
 
 FOUNDATION_EXPORT double AndVersionVersionNumber;
 FOUNDATION_EXPORT const unsigned char AndVersionVersionString[];

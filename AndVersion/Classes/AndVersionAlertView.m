@@ -13,12 +13,10 @@
 
 #define AND_VERSION_MAX_TABLE_WIDTH 500.0f
 
-#define AND_VERSION_FONT @"Verdana"
-
 #import "AndVersionAlertView.h"
 #import "UILabel+Misc.h"
-#import "UIColor+AndVersionColors.h"
 #import "AndVersion.h"
+#import "AndVersionConfiguration.h"
 
 @interface AndVersionAlertView()<UITableViewDataSource, UITableViewDelegate>{
     AndVersionAlertViewType alertType;
@@ -31,6 +29,8 @@
 @property CGFloat maxTableHeight;
 @property CGFloat actualTableHeight;
 
+@property AndVersionConfiguration *configuration;
+
 @end
 
 @implementation AndVersionAlertView
@@ -39,6 +39,8 @@
 {
     alertType = andVersionAlertViewType;
     whatsNewList = whatsNew;
+    
+    _configuration = [AndVersion sharedAndVersion].configuration;
     
     UIView* superview = [UIApplication sharedApplication].keyWindow;
     self.frame = superview.bounds;
@@ -62,8 +64,8 @@
     }
     
     _bgView = [[UIView alloc] initWithFrame:self.bounds];
-    _bgView.backgroundColor = [AndVersion sharedAndVersion].configuration.alertviewBacgroundColor;
-    _bgView.alpha = [AndVersion sharedAndVersion].configuration.alertviewBacgroundAlpha;
+    _bgView.backgroundColor = _configuration.infoViewBacgroundColor;
+    _bgView.alpha = _configuration.infoViewBacgroundAlpha;
     
     [self addSubview:_bgView];
 }
@@ -72,7 +74,7 @@
     _table = [[UITableView alloc] initWithFrame:[self createTableFrame] style:UITableViewStyleGrouped];
     
     _table.backgroundColor = [UIColor clearColor];
-    _table.separatorColor = [UIColor andVersionGreen];
+    _table.separatorColor = _configuration.infoViewTableSeperatorColor;
     _table.dataSource = self;
     _table.delegate = self;
     
@@ -130,13 +132,13 @@
     lbl.textAlignment = NSTextAlignmentCenter;
     lbl.lineBreakMode = NSLineBreakByTruncatingTail;
     lbl.numberOfLines=0;
-    lbl.textColor = [UIColor andVersionGreen];
-    lbl.font = [UIFont fontWithName:AND_VERSION_FONT size:14];
+    lbl.textColor = _configuration.infoViewTitleColor;
+    lbl.font = _configuration.infoViewTitleFont;
     
     if(alertType == AndVersionAlertViewTypeNewVersion){
-        lbl.text = [AndVersion sharedAndVersion].configuration.titleForNewVersion;
+        lbl.text = [AndVersion sharedAndVersion].configuration.infoViewTitleForNewVersion;
     }else{
-        lbl.text = [AndVersion sharedAndVersion].configuration.titleForNeedUpdate;
+        lbl.text = [AndVersion sharedAndVersion].configuration.infoViewTitleForNeedUpdate;
     }
     
     return lbl;
@@ -158,16 +160,19 @@
         CGFloat buttonWidth = tableView.frame.size.width - (2 * AND_VERSION_BUTTON_MARGIN);
         
         UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(buttonX, buttonY, buttonWidth, AND_VERSION_BUTTON_HEIGHT)];
-        btn.backgroundColor = [UIColor andVersionGreen];
-        btn.titleLabel.font = [UIFont fontWithName:AND_VERSION_FONT size:14];
+        btn.titleLabel.font = _configuration.infoViewButtonFont;
         
         if(alertType == AndVersionAlertViewTypeMandatoryUpdate){
-            [btn setTitle:[AndVersion sharedAndVersion].configuration.updateButtonTitle forState:UIControlStateNormal];
+            btn.backgroundColor = _configuration.infoViewUpdateButtonColor;
+            [btn.titleLabel setTextColor:_configuration.infoViewUpdateButtonTextColor];
+            [btn setTitle:[AndVersion sharedAndVersion].configuration.infoViewUpdateButtonTitle forState:UIControlStateNormal];
             [btn addTarget:self
                     action:@selector(onOpenItunesButtonClicked:)
           forControlEvents:UIControlEventTouchUpInside];
         }else{
-            [btn setTitle:[AndVersion sharedAndVersion].configuration.okButtonTitle forState:UIControlStateNormal];
+            btn.backgroundColor = _configuration.infoViewOKButtonColor;
+            [btn.titleLabel setTextColor:_configuration.infoViewOKButtonTextColor];
+            [btn setTitle:[AndVersion sharedAndVersion].configuration.infoViewOKButtonTitle forState:UIControlStateNormal];
             [btn addTarget:self
                     action:@selector(onOkButtonClicked:)
           forControlEvents:UIControlEventTouchUpInside];
@@ -178,9 +183,10 @@
         CGFloat buttonWidth = (tableView.frame.size.width - (3 * AND_VERSION_BUTTON_MARGIN)) / 2;
         
         UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(buttonX, buttonY, buttonWidth, AND_VERSION_BUTTON_HEIGHT)];
-        btn.backgroundColor = [UIColor andVersionRed];
-        [btn setTitle:[AndVersion sharedAndVersion].configuration.continueButtonTitle forState:UIControlStateNormal];
-        btn.titleLabel.font = [UIFont fontWithName:AND_VERSION_FONT size:14];
+        btn.backgroundColor = _configuration.infoViewContinueButtonColor;
+        [btn.titleLabel setTextColor:_configuration.infoViewContinueButtonTextColor];
+        [btn setTitle:[AndVersion sharedAndVersion].configuration.infoViewContinueButtonTitle forState:UIControlStateNormal];
+        btn.titleLabel.font = _configuration.infoViewButtonFont;
         [btn addTarget:self
                 action:@selector(onOkButtonClicked:)
       forControlEvents:UIControlEventTouchUpInside];
@@ -188,9 +194,10 @@
         
         buttonX += buttonWidth + AND_VERSION_BUTTON_MARGIN;
         btn = [[UIButton alloc] initWithFrame:CGRectMake(buttonX, buttonY, buttonWidth, AND_VERSION_BUTTON_HEIGHT)];
-        btn.backgroundColor = [UIColor andVersionGreen];
-        [btn setTitle:[AndVersion sharedAndVersion].configuration.updateButtonTitle forState:UIControlStateNormal];
-        btn.titleLabel.font = [UIFont fontWithName:AND_VERSION_FONT size:14];
+        btn.backgroundColor = _configuration.infoViewUpdateButtonColor;
+        [btn.titleLabel setTextColor:_configuration.infoViewUpdateButtonTextColor];
+        [btn setTitle:[AndVersion sharedAndVersion].configuration.infoViewUpdateButtonTitle forState:UIControlStateNormal];
+        btn.titleLabel.font = _configuration.infoViewButtonFont;
         [btn addTarget:self
                 action:@selector(onOpenItunesButtonClicked:)
       forControlEvents:UIControlEventTouchUpInside];
@@ -230,8 +237,8 @@
         cell.backgroundColor = [UIColor clearColor];
         cell.textLabel.lineBreakMode = NSLineBreakByTruncatingTail;
         cell.textLabel.numberOfLines=0;
-        cell.textLabel.textColor = [UIColor whiteColor];
-        cell.textLabel.font = [UIFont fontWithName:AND_VERSION_FONT size:12];
+        cell.textLabel.textColor = _configuration.infoViewWhatsNewTextColor;
+        cell.textLabel.font = _configuration.infoViewWhatsNewFont;
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     
