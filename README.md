@@ -122,6 +122,8 @@ Add this code to didFinishLaunchingWithOptions in your AppDelagate.m
 ```objectivec
 #import "AndVersion.h"
 ```
+#import "AndVersion.h"
+```
 
 ```objective c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
