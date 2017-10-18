@@ -42,7 +42,7 @@ All fields are mandatory. If one of them is missing in the json file, AndVersion
 
 **MinVersion :** The lowest version code that is wanted to be supported.
 
-**AppStoreId :** Current apllication's store id.
+**AppStoreId :** Current application's store id.
 
 **WhatsNew :** The list of new features that are added in the CurrentVersion.
 The key of inner object should be **locale languge code** and the value of inner object shoul be **string array**.
