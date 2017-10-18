@@ -1,5 +1,8 @@
 # Change Log
 
+## [v1.1.1] (https://github.com/zingat/AndVersion-iOS/releases/tag/1.1.1) (2017-10-18)
+- Adding changelog
+
 ## [v1.1.0] (https://github.com/zingat/AndVersion-iOS/releases/tag/1.1.0) (2017-10-18)
 - Adding ability to configure the infoView
 
