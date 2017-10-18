@@ -16,23 +16,23 @@ This is the library that checks updates on Apple Store according to json file fr
 ### SAMPLE JSON FILE
 ```json
 {
-"AndVersion": {
-"CurrentVersion": "1.8.3",
-"MinVersion": "1.2.5",
-"AppStoreId": "1088280260",
-"WhatsNew": {
-"en": [
-"3D home tours (where offered by rental listing).",
-"Minor enhancements to Schools information shown for a property",
-"Bug fixes and performance improvements"
-],
-"tr": [
-"3D konut turu (danışman tarafından eklenmişse).",
-"Bir emlak etrafında gösterilen okul bilgileri için iyileştirmeler",
-"Hata düzeltmeleri ve performans iyileştirmeleri"
-]
-}
-}
+    "AndVersion": {
+    "CurrentVersion": "1.8.3",
+    "MinVersion": "1.2.5",
+    "AppStoreId": "1088280260",
+    "WhatsNew": {
+        "en": [
+            "3D home tours (where offered by rental listing).",
+            "Minor enhancements to Schools information shown for a property",
+            "Bug fixes and performance improvements"
+        ],
+        "tr": [
+            "3D konut turu (danışman tarafından eklenmişse).",
+            "Bir emlak etrafında gösterilen okul bilgileri için iyileştirmeler",
+            "Hata düzeltmeleri ve performans iyileştirmeleri"
+        ]
+    }
+    }
 }
 
 ```
@@ -66,49 +66,49 @@ You can use AndVersion in three ways.
 With this option, AndVersion notifies the current situation and this situation should be handled by the developer (if needed).
 Add this code to didFinishLaunchingWithOptions in your AppDelagate.m
 
-```
+```objectivec
 #import "AndVersion.h"
 
 @interface zngAppDelegate() <AndVersionDelegate>
 @end
 ```
 
-```
+```objectivec
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-[AndVersion sharedAndVersion].delegate = self;
-[[AndVersion sharedAndVersion] checkVersionWithUrl:@"https://andversion.com/sample/demoIOS.json"];
-
-// Override point for customization after application launch.
-return YES;
+    [AndVersion sharedAndVersion].delegate = self;
+    [[AndVersion sharedAndVersion] checkVersionWithUrl:@"https://andversion.com/sample/demoIOS.json"];
+    
+    // Override point for customization after application launch.
+    return YES;
 }
 ```
 
 All methods in AndVersionDelegate are optional. You can implement only needed ones.
-```
+```objectivec
 -(void) didAndVersionFindNoUpdate{
-NSLog(@"No New Version");
+    NSLog(@"No New Version");
 }
 
 -(void) didAndVersionFindOptionalUpdate:(NSArray <NSString *> *) whatsNew{
-NSLog(@"Optional New Version");
-for(NSString *wNew in whatsNew){
-NSLog(@"%@", wNew);
-}
+    NSLog(@"Optional New Version");
+    for(NSString *wNew in whatsNew){
+        NSLog(@"%@", wNew);
+    }
 }
 
 -(void) didAndVersionFindMandatoryUpdate:(NSArray <NSString *> *) whatsNew{
-NSLog(@"Mandatory New Version");
-for(NSString *wNew in whatsNew){
-NSLog(@"%@", wNew);
-}
+    NSLog(@"Mandatory New Version");
+    for(NSString *wNew in whatsNew){
+        NSLog(@"%@", wNew);
+    }
 }
 
 -(void) didAndVersionMeetNewVersion:(NSArray <NSString *> *) whatsNew{
-NSLog(@"Meet New Version");
-for(NSString *wNew in whatsNew){
-NSLog(@"%@", wNew);
-}
+    NSLog(@"Meet New Version");
+    for(NSString *wNew in whatsNew){
+        NSLog(@"%@", wNew);
+    }
 }
 
 
@@ -119,28 +119,28 @@ NSLog(@"%@", wNew);
 With this option, AndVersion controls the parameters in json file and handles the situations that are wanted.
 Add this code to didFinishLaunchingWithOptions in your AppDelagate.m
 
-```
+```objectivec
 #import "AndVersion.h"
 ```
 
-```
+```objective c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-//if showAlertForNewVersion is set true, AndVersion shows whats new info view when the user must update his app.
-//The user can not use the app without updating
-[AndVersion sharedAndVersion].showAlertForMandatoryUpdate = YES;
-
-//if showAlertForOptionalUpdate is set true, AndVersion shows whats new info view when the app version is old but ok.
-//The user can use the app without updating
-[AndVersion sharedAndVersion].showAlertForOptionalUpdate = YES;
-
-//if showAlertForNewVersion is set true, AndVersion shows whats new info view when the user updates his app.
-[AndVersion sharedAndVersion].showAlertForNewVersion = YES;
-
-[[AndVersion sharedAndVersion] checkVersionWithUrl:@"https://andversion.com/sample/demoIOS.json"];
-
-// Override point for customization after application launch.
-return YES;
+    //if showAlertForNewVersion is set true, AndVersion shows whats new info view when the user must update his app.
+    //The user can not use the app without updating
+    [AndVersion sharedAndVersion].showAlertForMandatoryUpdate = YES;
+    
+    //if showAlertForOptionalUpdate is set true, AndVersion shows whats new info view when the app version is old but ok.
+    //The user can use the app without updating
+    [AndVersion sharedAndVersion].showAlertForOptionalUpdate = YES;
+    
+    //if showAlertForNewVersion is set true, AndVersion shows whats new info view when the user updates his app.
+    [AndVersion sharedAndVersion].showAlertForNewVersion = YES;
+    
+    [[AndVersion sharedAndVersion] checkVersionWithUrl:@"https://andversion.com/sample/demoIOS.json"];
+    
+    // Override point for customization after application launch.
+    return YES;
 }
 
 ```
@@ -154,7 +154,7 @@ You can use callback and autopilot features by implementing both of them.
 These parameters is used only for autopilot mode. All there parameters have default value.
 
 
-```
+```objectivec
 [AndVersion sharedAndVersion].configuration.infoViewBacgroundColor = [UIColor blueColor];
 //Default value is [UIColor blackColor]
 
@@ -165,7 +165,7 @@ These parameters is used only for autopilot mode. All there parameters have defa
 //Default value is "89c400"
 ```
 
-```
+```objectivec
 [AndVersion sharedAndVersion].configuration.infoViewTitleColor = [UIColor redColor];
 //Default value is [UIColor blackColor]
 
@@ -179,12 +179,12 @@ These parameters is used only for autopilot mode. All there parameters have defa
 //Default value is "New features in this version"
 ```
 
-```
+```objectivec
 [AndVersion sharedAndVersion].configuration.infoViewButtonFont = [UIFont fontWithName:@"FontName" size:14];
 //Default value is [UIFont fontWithName:@"Verdana" size:14]
 ```
 
-```
+```objectivec
 [AndVersion sharedAndVersion].configuration.infoViewOKButtonColor = [UIColor redColor];
 //Default value is "89c400"
 
@@ -195,7 +195,7 @@ These parameters is used only for autopilot mode. All there parameters have defa
 //Default value is "Okay"
 ```
 
-```
+```objectivec
 [AndVersion sharedAndVersion].configuration.infoViewContinueButtonColor = [UIColor redColor];
 //Default value is "d80e2b"
 
@@ -206,7 +206,7 @@ These parameters is used only for autopilot mode. All there parameters have defa
 //Default value is "Continue"
 ```
 
-```
+```objectivec
 [AndVersion sharedAndVersion].configuration.infoViewUpdateButtonColor = [UIColor redColor];
 //Default value is "89c400"
 
@@ -217,7 +217,7 @@ These parameters is used only for autopilot mode. All there parameters have defa
 //Default value is "Update"
 ```
 
-```
+```objectivec
 [AndVersion sharedAndVersion].configuration.infoViewWhatsNewTextColor = [UIColor blackColor];
 //Default value is [UIColor whiteColor]
 
