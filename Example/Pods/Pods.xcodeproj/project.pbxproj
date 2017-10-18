@@ -51,7 +51,7 @@
 
 /* Begin PBXFileReference section */
 		000F86D1E0A2C3D780977B12A0F6C870 /* AndVersion-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AndVersion-umbrella.h"; sourceTree = "<group>"; };
-		01ACC85F21B9DBFE50F895CC3ADD287E /* Pods_AndVersion_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AndVersion_Tests.framework; path = "Pods-AndVersion_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		01ACC85F21B9DBFE50F895CC3ADD287E /* Pods_AndVersion_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AndVersion_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		175A1D08A1E88BA4AAD96459A0A4C2E1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B94B55F4C37255595E4C44AA72E6401 /* UIColor+AndVersionColors.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor+AndVersionColors.m"; sourceTree = "<group>"; };
 		2C74A90433A84306175CCFDB8397701A /* AndVersion.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AndVersion.xcconfig; sourceTree = "<group>"; };
@@ -68,21 +68,18 @@
 		59C5A7DBDAD3A81F712412D2018EBBE2 /* Pods-AndVersion_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AndVersion_Tests-dummy.m"; sourceTree = "<group>"; };
 		5B063F22A17684FF242501576D315E0F /* UILabel+Misc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UILabel+Misc.h"; sourceTree = "<group>"; };
 		5B887A99C20C5D44C1441EDCBB50878B /* Pods-AndVersion_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AndVersion_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5BFB23F75870C821B93F85CF7739C75F /* AndVersionAlertView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AndVersionAlertView.h; sourceTree = "<group>"; };
 		6025E1A66478D2BDFECD359C73B35F20 /* Pods-AndVersion_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AndVersion_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		61C0655304542598999BAE1C1408A449 /* AndVersionAlertView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AndVersionAlertView.m; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		69D3EFD024A802ABB02CE6DC1D191C9D /* NSString+CheckVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+CheckVersion.h"; sourceTree = "<group>"; };
 		69FBA0AF63DC010BBA0B066FC0DFEC1D /* Pods-AndVersion_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AndVersion_Example.release.xcconfig"; sourceTree = "<group>"; };
-		716CA377F92F78F019C92DB2B5BE5E28 /* AndVersion.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AndVersion.m; sourceTree = "<group>"; };
 		754725FD286971D8328145797E440F81 /* Pods-AndVersion_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AndVersion_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		77A6A121AED8671908313BBB3829C7AB /* UIColor+AndVersionColors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor+AndVersionColors.h"; sourceTree = "<group>"; };
 		7BA0F018ADC293647C024A21E2BAA4ED /* Pods-AndVersion_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AndVersion_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		818A6DE9E0F8B726FAA85BC9BAE43F0D /* Pods-AndVersion_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AndVersion_Example-umbrella.h"; sourceTree = "<group>"; };
 		8CC55A8025A5A5802B440D85868CA208 /* Pods-AndVersion_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AndVersion_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		8DBAB8843890DB23879DE35F26B91F0F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		96C691DB41467BEF0E6A103554D148A4 /* Pods-AndVersion_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-AndVersion_Tests.modulemap"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		96C691DB41467BEF0E6A103554D148A4 /* Pods-AndVersion_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AndVersion_Tests.modulemap"; sourceTree = "<group>"; };
 		99CE78A9DA1B4292C89763058452199C /* Pods-AndVersion_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AndVersion_Example-dummy.m"; sourceTree = "<group>"; };
 		9B0631CD6727A7185DA5EE22D7FDF5B1 /* AndVersionConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AndVersionConfiguration.m; sourceTree = "<group>"; };
 		9B101E46D23E5D33564EC9E5803B33CD /* Pods-AndVersion_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AndVersion_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -91,14 +88,13 @@
 		B5A2648BA6371FB6CEFB5371432B185E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBD0872D5EBC7D0B9182503376991716 /* UILabel+Misc.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Misc.m"; sourceTree = "<group>"; };
 		CB6E9CF8888B074E334EE4FF78FD1762 /* Pods-AndVersion_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AndVersion_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		D1C14DC6FA02E69A4B11FD65D1B32073 /* AndVersion.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AndVersion.modulemap; sourceTree = "<group>"; };
-		D4C035DCE52ECEA9BEB26D026BF29AB3 /* AndVersion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AndVersion.framework; path = AndVersion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1C14DC6FA02E69A4B11FD65D1B32073 /* AndVersion.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AndVersion.modulemap; sourceTree = "<group>"; };
+		D4C035DCE52ECEA9BEB26D026BF29AB3 /* AndVersion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AndVersion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E221619713744E17C312356A7D383BAB /* AndVersion.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AndVersion.m; sourceTree = "<group>"; };
-		EDB20740B015E47F7E33E26458575FB6 /* Pods_AndVersion_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AndVersion_Example.framework; path = "Pods-AndVersion_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE2F8A91053FE90298058A6B770D02AB /* Pods-AndVersion_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-AndVersion_Example.modulemap"; sourceTree = "<group>"; };
+		EDB20740B015E47F7E33E26458575FB6 /* Pods_AndVersion_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AndVersion_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE2F8A91053FE90298058A6B770D02AB /* Pods-AndVersion_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AndVersion_Example.modulemap"; sourceTree = "<group>"; };
 		F2D5E6ED91B93D780351F92080CC5E24 /* UIColor+AndVersionColors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor+AndVersionColors.h"; sourceTree = "<group>"; };
 		FF06AEC81A6131CA625E459920287C81 /* AndVersion-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AndVersion-prefix.pch"; sourceTree = "<group>"; };
-		FFED036E525C5F6FB66526959FA34D02 /* UILabel+Misc.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Misc.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +125,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07EC95671F977C8900F74951 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		13DA7946C2ACB4D1685DDF33EBF7E087 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,7 +161,6 @@
 				5B063F22A17684FF242501576D315E0F /* UILabel+Misc.h */,
 				BBD0872D5EBC7D0B9182503376991716 /* UILabel+Misc.m */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -166,7 +169,6 @@
 			children = (
 				381DA65F36A9729FEDB70B5630A6727B /* Classes */,
 			);
-			name = AndVersion;
 			path = AndVersion;
 			sourceTree = "<group>";
 		};
@@ -175,9 +177,9 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				DB9949B156A7538641839E74F6334FEE /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				13DA7946C2ACB4D1685DDF33EBF7E087 /* Products */,
 				8C4E8A856A1A9A56C43F3CD0803944BD /* Targets Support Files */,
+				07EC95671F977C8900F74951 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -206,23 +208,6 @@
 			);
 			name = "Pods-AndVersion_Example";
 			path = "Target Support Files/Pods-AndVersion_Example";
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				0EAB5297C01A6ED2569A355DBDFAB557 /* Classes */,
-			);
-			name = AndVersion;
-			path = AndVersion;
-			sourceTree = "<group>";
-		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		D72B14E6B6AD5AB660E0610BE3912D71 /* Pods-AndVersion_Tests */ = {
@@ -514,38 +499,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		2E6EA9F9F2A7B7D8C40BFB7E57DC8AED /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2C74A90433A84306175CCFDB8397701A /* AndVersion.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/AndVersion/AndVersion-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AndVersion/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AndVersion/AndVersion.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = AndVersion;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		345CC476DF4A7516DBD2220CF5035FF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
