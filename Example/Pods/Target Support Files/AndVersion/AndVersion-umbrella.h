@@ -12,6 +12,7 @@
 
 #import "AndVersion.h"
 #import "AndVersionAlertView.h"
+#import "AndVersionConfiguration.h"
 #import "NSString+CheckVersion.h"
 #import "RemoteVersionInfo.h"
 #import "UIColor+AndVersionColors.h"

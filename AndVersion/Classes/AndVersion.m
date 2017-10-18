@@ -10,6 +10,7 @@
 #import "NSString+CheckVersion.h"
 
 #import "AndVersionAlertView.h"
+#import "AndVersionConfiguration.h"
 
 @interface AndVersion()
 
@@ -25,11 +26,6 @@
 static NSString *previousVersionPreferenceKey = @"com.andversion.previousversion";
 
 @synthesize previousAppVersion = _previousAppVersion;
-@synthesize titleForNeedUpdate = _titleForNeedUpdate;
-@synthesize titleForNewVersion = _titleForNewVersion;
-@synthesize okButtonTitle = _okButtonTitle;
-@synthesize continueButtonTitle = _continueButtonTitle;
-@synthesize updateButtonTitle = _updateButtonTitle;
 
 + (instancetype)sharedAndVersion
 {
@@ -40,6 +36,15 @@ static NSString *previousVersionPreferenceKey = @"com.andversion.previousversion
         shared = [[AndVersion alloc] init];
     });
     return shared;
+}
+
+-(instancetype)init{
+    self = [super init];
+    if(self){
+        _configuration = [AndVersionConfiguration new];
+    }
+    
+    return self;
 }
 
 -(NSString *)previousAppVersion{
@@ -56,56 +61,6 @@ static NSString *previousVersionPreferenceKey = @"com.andversion.previousversion
     NSUserDefaults *preferences = [NSUserDefaults standardUserDefaults];
     [preferences setObject:_previousAppVersion forKey:previousVersionPreferenceKey];
     [preferences synchronize];
-}
-
--(NSString *)titleForNeedUpdate{
-    if(_titleForNeedUpdate){
-        return _titleForNeedUpdate;
-    }
-    return @"It is recommended to update your applciation";
-}
--(void)setTitleForNeedUpdate:(NSString *)titleForNeedUpdate{
-    _titleForNeedUpdate = titleForNeedUpdate;
-}
-
--(NSString *)titleForNewVersion{
-    if(_titleForNewVersion){
-        return _titleForNewVersion;
-    }
-    return @"New features in this version";
-}
--(void)setTitleForNewVersion:(NSString *)titleForNewVersion{
-    _titleForNewVersion = titleForNewVersion;
-}
-
--(NSString *)okButtonTitle{
-    if(_okButtonTitle){
-        return _okButtonTitle;
-    }
-    return @"Okay";
-}
--(void)setOkButtonTitle:(NSString *)okButtonTitle{
-    _okButtonTitle = okButtonTitle;
-}
-
--(NSString *)continueButtonTitle{
-    if(_continueButtonTitle){
-        return _continueButtonTitle;
-    }
-    return @"Continue";
-}
--(void)setContinueButtonTitle:(NSString *)continueButtonTitle{
-    _continueButtonTitle = continueButtonTitle;
-}
-
--(NSString *)updateButtonTitle{
-    if(_updateButtonTitle){
-        return _updateButtonTitle;
-    }
-    return @"Update";
-}
--(void)setUpdateButtonTitle:(NSString *)updateButtonTitle{
-    _updateButtonTitle = updateButtonTitle;
 }
 
 
