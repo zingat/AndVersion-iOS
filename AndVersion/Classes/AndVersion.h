@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "AndVersionConfiguration.h"
 
 @protocol AndVersionDelegate <NSObject>
 
@@ -26,12 +27,8 @@
 @property (nonatomic) bool showAlertForOptionalUpdate;
 @property (nonatomic) bool showAlertForNewVersion;
 
-@property (nonatomic) NSString *titleForNeedUpdate;
-@property (nonatomic) NSString *titleForNewVersion;
-@property (nonatomic) NSString *okButtonTitle;
-@property (nonatomic) NSString *continueButtonTitle;
-@property (nonatomic) NSString *updateButtonTitle;
 @property (nonatomic) NSString *appStoreId;
+@property (nonatomic) AndVersionConfiguration *configuration;
 
 + (instancetype)sharedAndVersion;
 - (void) checkVersionWithUrl:(NSString *) urlString;

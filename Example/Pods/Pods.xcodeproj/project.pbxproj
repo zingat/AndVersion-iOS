@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		072B86441F972F9200FDB337 /* AndVersionConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 072B86421F972F9200FDB337 /* AndVersionConfiguration.h */; };
+		072B86451F972F9200FDB337 /* AndVersionConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 072B86431F972F9200FDB337 /* AndVersionConfiguration.m */; };
 		0770D85C1F86006C009DEB15 /* AndVersionAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0770D85A1F86006C009DEB15 /* AndVersionAlertView.h */; };
 		0770D85D1F86006C009DEB15 /* AndVersionAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0770D85B1F86006C009DEB15 /* AndVersionAlertView.m */; };
 		0770D8601F861286009DEB15 /* UILabel+Misc.h in Headers */ = {isa = PBXBuildFile; fileRef = 0770D85E1F861286009DEB15 /* UILabel+Misc.h */; };
@@ -50,6 +52,8 @@
 /* Begin PBXFileReference section */
 		000F86D1E0A2C3D780977B12A0F6C870 /* AndVersion-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AndVersion-umbrella.h"; sourceTree = "<group>"; };
 		01ACC85F21B9DBFE50F895CC3ADD287E /* Pods_AndVersion_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AndVersion_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		072B86421F972F9200FDB337 /* AndVersionConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AndVersionConfiguration.h; sourceTree = "<group>"; };
+		072B86431F972F9200FDB337 /* AndVersionConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AndVersionConfiguration.m; sourceTree = "<group>"; };
 		0770D85A1F86006C009DEB15 /* AndVersionAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AndVersionAlertView.h; sourceTree = "<group>"; };
 		0770D85B1F86006C009DEB15 /* AndVersionAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AndVersionAlertView.m; sourceTree = "<group>"; };
 		0770D85E1F861286009DEB15 /* UILabel+Misc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+Misc.h"; sourceTree = "<group>"; };
@@ -136,6 +140,8 @@
 				0770D85F1F861286009DEB15 /* UILabel+Misc.m */,
 				0770D8621F865298009DEB15 /* UIColor+AndVersionColors.h */,
 				0770D8631F865298009DEB15 /* UIColor+AndVersionColors.m */,
+				072B86421F972F9200FDB337 /* AndVersionConfiguration.h */,
+				072B86431F972F9200FDB337 /* AndVersionConfiguration.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -290,6 +296,7 @@
 				0770D8641F865298009DEB15 /* UIColor+AndVersionColors.h in Headers */,
 				891A8D322A4C56C2EC1A608AFA945E2D /* AndVersion.h in Headers */,
 				3431B8090671786B0819106F184C8659 /* NSString+CheckVersion.h in Headers */,
+				072B86441F972F9200FDB337 /* AndVersionConfiguration.h in Headers */,
 				9319B4A49363D5F2464632942D01BD1E /* RemoteVersionInfo.h in Headers */,
 				0770D8601F861286009DEB15 /* UILabel+Misc.h in Headers */,
 			);
@@ -386,6 +393,7 @@
 			files = (
 				0770D8611F861286009DEB15 /* UILabel+Misc.m in Sources */,
 				0770D85D1F86006C009DEB15 /* AndVersionAlertView.m in Sources */,
+				072B86451F972F9200FDB337 /* AndVersionConfiguration.m in Sources */,
 				E068847180084DA3B5E1E2BCB83C1106 /* AndVersion-dummy.m in Sources */,
 				DDE3D95970CA7B508578DB3BED49ACCE /* AndVersion.m in Sources */,
 				8795FC8EDD0D5885B80D79FE50C2E682 /* NSString+CheckVersion.m in Sources */,

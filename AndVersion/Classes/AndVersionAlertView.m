@@ -62,8 +62,8 @@
     }
     
     _bgView = [[UIView alloc] initWithFrame:self.bounds];
-    _bgView.backgroundColor = [UIColor blackColor];
-    _bgView.alpha = 0.85;
+    _bgView.backgroundColor = [AndVersion sharedAndVersion].configuration.alertviewBacgroundColor;
+    _bgView.alpha = [AndVersion sharedAndVersion].configuration.alertviewBacgroundAlpha;
     
     [self addSubview:_bgView];
 }
@@ -134,9 +134,9 @@
     lbl.font = [UIFont fontWithName:AND_VERSION_FONT size:14];
     
     if(alertType == AndVersionAlertViewTypeNewVersion){
-        lbl.text = [[AndVersion sharedAndVersion] titleForNewVersion];
+        lbl.text = [AndVersion sharedAndVersion].configuration.titleForNewVersion;
     }else{
-        lbl.text = [[AndVersion sharedAndVersion] titleForNeedUpdate];
+        lbl.text = [AndVersion sharedAndVersion].configuration.titleForNeedUpdate;
     }
     
     return lbl;
@@ -162,12 +162,12 @@
         btn.titleLabel.font = [UIFont fontWithName:AND_VERSION_FONT size:14];
         
         if(alertType == AndVersionAlertViewTypeMandatoryUpdate){
-            [btn setTitle:[[AndVersion sharedAndVersion] updateButtonTitle] forState:UIControlStateNormal];
+            [btn setTitle:[AndVersion sharedAndVersion].configuration.updateButtonTitle forState:UIControlStateNormal];
             [btn addTarget:self
                     action:@selector(onOpenItunesButtonClicked:)
           forControlEvents:UIControlEventTouchUpInside];
         }else{
-            [btn setTitle:[[AndVersion sharedAndVersion] okButtonTitle] forState:UIControlStateNormal];
+            [btn setTitle:[AndVersion sharedAndVersion].configuration.okButtonTitle forState:UIControlStateNormal];
             [btn addTarget:self
                     action:@selector(onOkButtonClicked:)
           forControlEvents:UIControlEventTouchUpInside];
@@ -179,7 +179,7 @@
         
         UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(buttonX, buttonY, buttonWidth, AND_VERSION_BUTTON_HEIGHT)];
         btn.backgroundColor = [UIColor andVersionRed];
-        [btn setTitle:[[AndVersion sharedAndVersion] continueButtonTitle] forState:UIControlStateNormal];
+        [btn setTitle:[AndVersion sharedAndVersion].configuration.continueButtonTitle forState:UIControlStateNormal];
         btn.titleLabel.font = [UIFont fontWithName:AND_VERSION_FONT size:14];
         [btn addTarget:self
                 action:@selector(onOkButtonClicked:)
@@ -189,7 +189,7 @@
         buttonX += buttonWidth + AND_VERSION_BUTTON_MARGIN;
         btn = [[UIButton alloc] initWithFrame:CGRectMake(buttonX, buttonY, buttonWidth, AND_VERSION_BUTTON_HEIGHT)];
         btn.backgroundColor = [UIColor andVersionGreen];
-        [btn setTitle:[[AndVersion sharedAndVersion] updateButtonTitle] forState:UIControlStateNormal];
+        [btn setTitle:[AndVersion sharedAndVersion].configuration.updateButtonTitle forState:UIControlStateNormal];
         btn.titleLabel.font = [UIFont fontWithName:AND_VERSION_FONT size:14];
         [btn addTarget:self
                 action:@selector(onOpenItunesButtonClicked:)
