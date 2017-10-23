@@ -5,8 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/AndVersion.svg?style=flat)](http://cocoapods.org/pods/AndVersion)
 [![Platform](https://img.shields.io/cocoapods/p/AndVersion.svg?style=flat)](http://cocoapods.org/pods/AndVersion)
 
-This is the library that checks updates on Apple Store according to json file from the given url address.
-
+This library checks updates on Apple Store by using given json file url. If wanted, the library also lists what's new info to the users when a new version is available.
 
 
 ## SCREENSHOT
