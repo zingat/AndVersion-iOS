@@ -34,6 +34,7 @@
 @property (nonatomic) UIColor *infoViewContinueButtonTextColor;
 
 @property (nonatomic) UIFont *infoViewButtonFont;
+@property (nonatomic) CGFloat infoViewButtonRadius;
 
 @property (nonatomic) UIColor *infoViewWhatsNewTextColor;
 @property (nonatomic) UIFont *infoViewWhatsNewFont;

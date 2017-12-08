@@ -1,4 +1,7 @@
 # Change Log
+## [v1.2.1] (https://github.com/zingat/AndVersion-iOS/releases/tag/1.2.1) (2017-10-18)
+- Adding new parameter type ( [AndVersion sharedAndVersion].configuration.infoViewButtonRadius )
+
 ## [v1.2.0] (https://github.com/zingat/AndVersion-iOS/releases/tag/1.2.0) (2017-10-18)
 - Making buttons rounded
 

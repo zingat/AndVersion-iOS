@@ -21,6 +21,7 @@
     [AndVersion sharedAndVersion].showAlertForOptionalUpdate = YES;
     [AndVersion sharedAndVersion].showAlertForMandatoryUpdate = YES;
     //[AndVersion sharedAndVersion].configuration.titleForNeedUpdate = @"Update your app for these awesome features";
+    
     [[AndVersion sharedAndVersion] checkVersionWithUrl:@"https://andversion.com/sample/demoIOS.json"];
     
     // Override point for customization after application launch.

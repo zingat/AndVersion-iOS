@@ -40,6 +40,7 @@
         _infoViewContinueButtonTextColor = [UIColor whiteColor];
         
         _infoViewButtonFont = [UIFont fontWithName:AND_VERSION_FONT size:14];
+        _infoViewButtonRadius = -1;
         
         _infoViewWhatsNewTextColor = [UIColor whiteColor];
         _infoViewWhatsNewFont = [UIFont fontWithName:AND_VERSION_FONT size:12];

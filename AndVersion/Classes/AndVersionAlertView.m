@@ -9,12 +9,13 @@
 
 #define AND_VERSION_HEADER_HEIGHT 50.0f
 #define AND_VERSION_BUTTON_HEIGHT 44.0f
-#define AND_VERSION_BUTTON_MARGIN 5.0f
+#define AND_VERSION_BUTTON_MARGIN 20.0f
 
 #define AND_VERSION_MAX_TABLE_WIDTH 500.0f
 
 #import "AndVersionAlertView.h"
 #import "UILabel+Misc.h"
+#import "UIButton+AndVersion.h"
 #import "AndVersion.h"
 #import "AndVersionConfiguration.h"
 
@@ -160,8 +161,7 @@
         CGFloat buttonWidth = tableView.frame.size.width - (2 * AND_VERSION_BUTTON_MARGIN);
         
         UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(buttonX, buttonY, buttonWidth, AND_VERSION_BUTTON_HEIGHT)];
-        btn.layer.cornerRadius = btn.frame.size.height / 2;
-        btn.titleLabel.font = _configuration.infoViewButtonFont;
+        [btn configureButton:_configuration];
         
         if(alertType == AndVersionAlertViewTypeMandatoryUpdate){
             btn.backgroundColor = _configuration.infoViewUpdateButtonColor;
@@ -184,11 +184,11 @@
         CGFloat buttonWidth = (tableView.frame.size.width - (3 * AND_VERSION_BUTTON_MARGIN)) / 2;
         
         UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(buttonX, buttonY, buttonWidth, AND_VERSION_BUTTON_HEIGHT)];
-        btn.layer.cornerRadius = btn.frame.size.height / 2;
+        [btn configureButton:_configuration];
+        
         btn.backgroundColor = _configuration.infoViewContinueButtonColor;
         [btn.titleLabel setTextColor:_configuration.infoViewContinueButtonTextColor];
         [btn setTitle:[AndVersion sharedAndVersion].configuration.infoViewContinueButtonTitle forState:UIControlStateNormal];
-        btn.titleLabel.font = _configuration.infoViewButtonFont;
         [btn addTarget:self
                 action:@selector(onOkButtonClicked:)
       forControlEvents:UIControlEventTouchUpInside];
@@ -196,11 +196,11 @@
         
         buttonX += buttonWidth + AND_VERSION_BUTTON_MARGIN;
         btn = [[UIButton alloc] initWithFrame:CGRectMake(buttonX, buttonY, buttonWidth, AND_VERSION_BUTTON_HEIGHT)];
-        btn.layer.cornerRadius = btn.frame.size.height / 2;
+        [btn configureButton:_configuration];
+        
         btn.backgroundColor = _configuration.infoViewUpdateButtonColor;
         [btn.titleLabel setTextColor:_configuration.infoViewUpdateButtonTextColor];
         [btn setTitle:[AndVersion sharedAndVersion].configuration.infoViewUpdateButtonTitle forState:UIControlStateNormal];
-        btn.titleLabel.font = _configuration.infoViewButtonFont;
         [btn addTarget:self
                 action:@selector(onOpenItunesButtonClicked:)
       forControlEvents:UIControlEventTouchUpInside];

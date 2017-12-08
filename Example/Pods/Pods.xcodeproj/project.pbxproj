@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		074C8A4B1FDA807D0062C80B /* UIButton+AndVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = 074C8A491FDA807D0062C80B /* UIButton+AndVersion.h */; };
+		074C8A4C1FDA807D0062C80B /* UIButton+AndVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 074C8A4A1FDA807D0062C80B /* UIButton+AndVersion.m */; };
 		0856CA0012296DC622A3BF58257E1AB8 /* UILabel+Misc.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD0872D5EBC7D0B9182503376991716 /* UILabel+Misc.m */; };
 		224AC42BC93F71A9B9FB86EDB361DD25 /* UIColor+AndVersionColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B94B55F4C37255595E4C44AA72E6401 /* UIColor+AndVersionColors.m */; };
 		272F7E5C0F6D670D49AB69631E777A9A /* Pods-AndVersion_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 818A6DE9E0F8B726FAA85BC9BAE43F0D /* Pods-AndVersion_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -52,6 +54,8 @@
 /* Begin PBXFileReference section */
 		000F86D1E0A2C3D780977B12A0F6C870 /* AndVersion-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AndVersion-umbrella.h"; sourceTree = "<group>"; };
 		01ACC85F21B9DBFE50F895CC3ADD287E /* Pods_AndVersion_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AndVersion_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		074C8A491FDA807D0062C80B /* UIButton+AndVersion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+AndVersion.h"; sourceTree = "<group>"; };
+		074C8A4A1FDA807D0062C80B /* UIButton+AndVersion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+AndVersion.m"; sourceTree = "<group>"; };
 		175A1D08A1E88BA4AAD96459A0A4C2E1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B94B55F4C37255595E4C44AA72E6401 /* UIColor+AndVersionColors.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor+AndVersionColors.m"; sourceTree = "<group>"; };
 		2C74A90433A84306175CCFDB8397701A /* AndVersion.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AndVersion.xcconfig; sourceTree = "<group>"; };
@@ -160,6 +164,8 @@
 				2B94B55F4C37255595E4C44AA72E6401 /* UIColor+AndVersionColors.m */,
 				5B063F22A17684FF242501576D315E0F /* UILabel+Misc.h */,
 				BBD0872D5EBC7D0B9182503376991716 /* UILabel+Misc.m */,
+				074C8A491FDA807D0062C80B /* UIButton+AndVersion.h */,
+				074C8A4A1FDA807D0062C80B /* UIButton+AndVersion.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -275,6 +281,7 @@
 				B01BD41EF30D32035587E456E399FF12 /* RemoteVersionInfo.h in Headers */,
 				788169AAB63ACCAAB993CA5EC9C1CFE5 /* UIColor+AndVersionColors.h in Headers */,
 				6007FF2599A3EDC9D4B31ED2DC2943D5 /* UILabel+Misc.h in Headers */,
+				074C8A4B1FDA807D0062C80B /* UIButton+AndVersion.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,6 +398,7 @@
 				EB5C882155006A7ABAC0D78FEF1632E1 /* RemoteVersionInfo.m in Sources */,
 				224AC42BC93F71A9B9FB86EDB361DD25 /* UIColor+AndVersionColors.m in Sources */,
 				0856CA0012296DC622A3BF58257E1AB8 /* UILabel+Misc.m in Sources */,
+				074C8A4C1FDA807D0062C80B /* UIButton+AndVersion.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
