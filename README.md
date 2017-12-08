@@ -183,6 +183,9 @@ These parameters is used only for autopilot mode. All there parameters have defa
 ```objectivec
 [AndVersion sharedAndVersion].configuration.infoViewButtonFont = [UIFont fontWithName:@"FontName" size:14];
 //Default value is [UIFont fontWithName:@"Verdana" size:14]
+
+[AndVersion sharedAndVersion].configuration.infoViewButtonRadius = 4;
+//Default value is -1, It means "make the button rounded"
 ```
 
 ```objectivec
