@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		073EB5951F84CBDB00BB3AB4 /* zngNSString_CheckVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 073EB5941F84CBDB00BB3AB4 /* zngNSString_CheckVersion.m */; };
+		0797DB461FD9C3CC004197AA /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 0797DB451FD9C3CC004197AA /* CHANGELOG.md */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		073EB5941F84CBDB00BB3AB4 /* zngNSString_CheckVersion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = zngNSString_CheckVersion.m; sourceTree = "<group>"; };
+		0797DB451FD9C3CC004197AA /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = CHANGELOG.md; path = ../CHANGELOG.md; sourceTree = "<group>"; };
 		0CA378C102D2F1354D3B3433 /* Pods_AndVersion_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AndVersion_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		13E78A3BC440E942D8257351 /* Pods_AndVersion_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AndVersion_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* AndVersion_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AndVersion_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -193,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				6F3B6DF881D7EAA225609EBC /* AndVersion.podspec */,
+				0797DB451FD9C3CC004197AA /* CHANGELOG.md */,
 				8E50E320BDAF8E014004255B /* README.md */,
 				A84B332CD4995C97BC7337B2 /* LICENSE */,
 			);
@@ -286,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				0797DB461FD9C3CC004197AA /* CHANGELOG.md in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
