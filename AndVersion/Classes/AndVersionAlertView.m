@@ -106,7 +106,7 @@
 
 -(void) onOpenItunesButtonClicked:(UIButton*)sender
 {
-    NSString *iTunesLink = [NSString stringWithFormat: @"itms://itunes.apple.com/us/app/apple-store/id%@", [[AndVersion sharedAndVersion] appStoreId]];
+    NSString *iTunesLink = [NSString stringWithFormat: @"https://itunes.apple.com/us/app/apple-store/id%@", [[AndVersion sharedAndVersion] appStoreId]];
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:iTunesLink]];
 }
 

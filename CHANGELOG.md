@@ -1,4 +1,7 @@
 # Change Log
+## [v1.2.2] (https://github.com/zingat/AndVersion-iOS/releases/tag/1.2.2) (2018-03-12)
+- Fixing the bug while creating apple store url
+
 ## [v1.2.1] (https://github.com/zingat/AndVersion-iOS/releases/tag/1.2.1) (2017-10-18)
 - Adding new parameter type ( [AndVersion sharedAndVersion].configuration.infoViewButtonRadius )
 
