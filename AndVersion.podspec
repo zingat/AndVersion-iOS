@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AndVersion'
-  s.version          = '1.2.1'
+  s.version          = '1.2.2'
   s.summary          = 'This library checks updates on Apple Store by using given json file url. If wanted, the library also lists whats new info to the users when a new version is available.'
 
 # This description is used to generate tags and improve search results.
